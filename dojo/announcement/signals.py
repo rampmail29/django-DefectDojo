@@ -2,7 +2,7 @@ from dojo.models import Announcement, UserAnnouncement, Dojo_User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.conf import settings
-
+""" comment """
 
 @receiver(post_save, sender=Dojo_User)
 def add_announcement_to_new_user(sender, instance, **kwargs):
